@@ -4,6 +4,7 @@ import SignBoardSvgIcon from '@/components/Icons/SignBoardSvgIcon.vue'
 import BackupIcon from '@/components/Icons/BackupIcon.vue'
 import VisaSvgIcon from '@/components/Icons/VisaSvgIcon.vue'
 import SectionCard from '@/components/SectionCard.vue'
+import SucceedChip from '@/components/SucceedChip.vue'
 </script>
 <template>
   <SectionCard class="text-gray-500">
@@ -16,7 +17,7 @@ import SectionCard from '@/components/SectionCard.vue'
       <div class="right flex items-center">
         <span class="text-3xl font-semibold text-[#22252d]">$20.00</span
         ><span class="text-3xl mx-2 text-gray-600">USD</span>
-        <v-chip color="green" density="compact" label append-icon="mdi-check"> Succeeded </v-chip>
+        <SucceedChip />
       </div>
       <div class="left">
         <v-btn variant="flat"

@@ -2,13 +2,7 @@
 import Heading from '@/components/Heading.vue'
 import SectionCard from '@/components/SectionCard.vue'
 import UsaFlagSvgIcon from '@/components/Icons/UsaFlagSvgIcon.vue'
-import ArrowLeftSvgIcon from '@/components/Icons/ArrowLeftSvgIcon.vue'
-import InfoSquareSvgIcon from '@/components/Icons/InfoSquareSvgIcon.vue'
-import EditSvgIcon from '@/components/Icons/EditSvgIcon.vue'
-import CheckedSvgIcon from '@/components/Icons/CheckedSvgIcon.vue'
 import { ref } from 'vue'
-const input = ref('Invoice 7FCF2889-0007')
-const disableInput = ref(true)
 </script>
 <template>
   <SectionCard class="whitespace-nowrap">

@@ -4,7 +4,7 @@ import { ref } from 'vue'
 const model = ref(false)
 </script>
 <template>
-  <header class="px-12 text-[#3e4150] flex">
+  <header class="px-12 py-6 text-[#3e4150] flex">
     <!-- header aside part -->
     <div class="aside gap-4 flex items-center w-[200px]">
       <StoreSvgIcon class="text-2xl" />
