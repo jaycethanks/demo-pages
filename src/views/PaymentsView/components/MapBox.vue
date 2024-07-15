@@ -24,7 +24,7 @@ onUnmounted(() => {
 })
 </script>
 <template>
-  <div ref="mapContainer" class="map-container relative w-full h-full">
+  <div ref="mapContainer" class="map-container relative w-full h-[200px]">
     <v-btn variant="text" class="!absolute right-1 top-1 z-10"
       ><span class="normal-case font-semibold text-[#6171b4]">Reset</span></v-btn
     >
