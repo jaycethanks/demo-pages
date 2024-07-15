@@ -13,7 +13,7 @@ import RootContainer from './RootContainer.vue'
         <InnerHeader />
       </template>
       <SideBar />
-      <RouterView />
+      <RouterView class="flex-1" />
     </RootContainer>
     <Footer />
   </div>

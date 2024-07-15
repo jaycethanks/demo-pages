@@ -91,10 +91,10 @@ const alert = ref(true)
           <InfoSquareSvgIcon class="text-gray-400 ml-2" />
         </h3>
 
-        <!-- <MapBox /> -->
-        <span class="text-red-700 font-semibold text-2xl"
+        <MapBox />
+        <!-- <span class="text-red-700 font-semibold text-2xl"
           >提价代码的时候这里记得放开地图组件注释
-        </span>
+        </span> -->
       </div>
     </div>
   </SectionCard>

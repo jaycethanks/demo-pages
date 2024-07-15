@@ -12,7 +12,6 @@ import Timeline from '@/views/PaymentsView/components/Timeline.vue'
 </script>
 <template>
   <div>
-    <h1 class="text-red-500">Page Payment</h1>
     <Payment />
     <Timeline />
     <PaymentDetails />

@@ -1,6 +1,5 @@
-<script lang='ts' setup>
-</script>
+<script lang="ts" setup></script>
 <template>
-    404 Not Found
+  <p>404 Not Found</p>
 </template>
-<style lang='less' scoped></style>
+<style lang="less" scoped></style>

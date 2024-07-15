@@ -42,7 +42,8 @@ const MenuList = [
 <template>
   <ul>
     <RouterLink
-      class="flex gap-4 items-center mb-4"
+      v-ripple
+      class="flex gap-4 items-center p-2"
       v-for="({ name, path, icon }, index) in MenuList"
       :class="[currentPath === path ? 'text-[#513cbf] ' : 'text-[#36373e]']"
       :key="name"
