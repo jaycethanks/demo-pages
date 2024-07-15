@@ -1,5 +1,4 @@
 <script lang="ts" setup>
-import StoreSvgIcon from '@/components/Icons/StoreSvgIcon.vue'
 import BalanceSvgIcon from '@/components/Icons/BalanceSvgIcon.vue'
 import BillSvgIcon from '@/components/Icons/BillSvgIcon.vue'
 import MoreSvgIcon from '@/components/Icons/MoreSvgIcon.vue'
@@ -13,11 +12,6 @@ const route = useRoute()
 const currentPath = computed(() => route.path)
 
 const MenuList = [
-  {
-    name: 'FelixTest',
-    path: '/felixtest',
-    icon: StoreSvgIcon
-  },
   {
     name: 'Payments',
     path: '/payments',
@@ -48,17 +42,14 @@ const MenuList = [
 <template>
   <ul>
     <RouterLink
-      class="flex gap-4 items-center"
+      class="flex gap-4 items-center mb-4"
       v-for="({ name, path, icon }, index) in MenuList"
-      :class="[
-        index === 0 ? 'mb-12' : 'mb-4',
-        currentPath === path ? 'text-[#513cbf] ' : 'text-[#36373e]'
-      ]"
+      :class="[currentPath === path ? 'text-[#513cbf] ' : 'text-[#36373e]']"
       :key="name"
       :to="path"
     >
       <component :is="icon" class="text-2xl shrink-0"></component>
-      <span :class="{ 'font-semibold': index === 0 || currentPath === path }">{{ name }}</span>
+      <span :class="{ 'font-semibold': currentPath === path }">{{ name }}</span>
     </RouterLink>
   </ul>
 </template>

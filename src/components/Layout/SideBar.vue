@@ -1,9 +1,11 @@
-<script lang='ts' setup>
-import Menu from "./Menu/index.vue"
+<script lang="ts" setup>
+import Menu from './Menu/index.vue'
+import Shortcuts from './Shortcuts.vue'
 </script>
 <template>
-    <div class="side-bar w-[200px] p-12">
-        <Menu />
-    </div>
+  <div class="side-bar w-[200px]">
+    <Menu />
+    <Shortcuts />
+  </div>
 </template>
-<style lang='less' scoped></style>
+<style lang="less" scoped></style>
