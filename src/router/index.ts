@@ -1,20 +1,27 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import Page1 from '../views/Page1/index.vue'
-import Page2 from '../views/Page2/index.vue'
+import CustomersView from '../views/CustomersView/index.vue'
+import PaymentsView from '../views/PaymentsView/index.vue'
+import NotFound from "../views/404.vue"
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     {
       path: '/',
-      name: 'Page1',
-      component: Page1
+      name: 'homepage',
+      redirect: '/payments'
     },
     {
-      path: '/page2',
-      name: 'Page2',
-      component: Page2
-    }
+      path: '/payments',
+      name: 'payments',
+      component: PaymentsView
+    },
+    {
+      path: '/customers',
+      name: 'customers',
+      component: CustomersView
+    },
+    { path: '/:pathMatch(.*)*', name: 'NotFound', component: NotFound },
   ]
 })
 
