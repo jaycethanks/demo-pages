@@ -9,10 +9,10 @@ import SectionCard from '@/components/SectionCard.vue'
     </p>
     <Heading title="阿斯顿发斯蒂芬12312323">
       <v-btn density="comfortable" class="mr-2"
-        ><span class="normal-case">Create payment</span></v-btn
+        ><span class="normal-case font-semibold">Create payment</span></v-btn
       >
       <v-btn density="comfortable" class="mr-2"
-        ><span class="normal-case">Create invoice</span></v-btn
+        ><span class="normal-case font-semibold">Create invoice</span></v-btn
       >
       <v-btn density="comfortable" class="!min-w-10 px-1">
         <v-icon icon="mdi-dots-horizontal"></v-icon>

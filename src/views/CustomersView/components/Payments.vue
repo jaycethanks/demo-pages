@@ -65,8 +65,16 @@ const items = [
     <Heading title="Payments">
       <v-btn density="comfortable" icon="mdi-plus"></v-btn>
     </Heading>
+    <v-divider class="border-opacity-100 -mt-2"></v-divider>
 
-    <v-data-table :headers="headers" v-model="selected" :items="items" item-value="id" show-select>
+    <v-data-table
+      hide-default-footer
+      :headers="headers"
+      v-model="selected"
+      :items="items"
+      item-value="id"
+      show-select
+    >
       <template v-slot:headers="{ columns }">
         <tr>
           <template v-for="column in columns" :key="column.key">

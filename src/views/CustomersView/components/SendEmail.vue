@@ -5,9 +5,10 @@ import SectionCard from '@/components/SectionCard.vue'
 <template>
   <SectionCard>
     <Heading title="Send email">
-      <v-btn class="mr-2"><span>Create payment</span></v-btn>
-      <v-btn><span>Create invoice</span></v-btn>
-      <v-btn icon="mdi-plus"></v-btn>
+      <v-btn density="comfortable"
+        ><span class="normal-case font-semibold">Enable recovery emails</span></v-btn
+      >
     </Heading>
+    <p class="text-gray-500">No emails sent within the past 30 days</p>
   </SectionCard>
 </template>
