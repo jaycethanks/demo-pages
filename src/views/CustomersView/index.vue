@@ -22,7 +22,7 @@ import Notes from '@/views/CustomersView/components/RightSide/Notes.vue'
   <div>
     <Customers />
     <div class="flex gap-12">
-      <main class="flex-1 border-error border">
+      <main class="flex-1">
         <Subscriptions />
         <Payments />
         <PaymentMethods />
@@ -36,7 +36,7 @@ import Notes from '@/views/CustomersView/components/RightSide/Notes.vue'
         <Logs />
         <Events />
       </main>
-      <aside class="w-[300px] border-primary border">
+      <aside class="w-[320px]">
         <Notes />
         <Insights />
         <Details />
