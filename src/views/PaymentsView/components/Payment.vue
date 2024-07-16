@@ -23,7 +23,9 @@ import SucceedChip from '@/components/SucceedChip.vue'
         <v-btn class="mr-4"
           ><BackupIcon class="text-2xl" /><span class="normal-case">Refund</span></v-btn
         >
-        <v-btn variant="text" icon="mdi-dots-horizontal"></v-btn>
+        <v-btn class="!min-w-10 px-1">
+          <v-icon icon="mdi-dots-horizontal"></v-icon>
+        </v-btn>
       </div>
     </div>
 

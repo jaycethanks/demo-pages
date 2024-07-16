@@ -19,28 +19,30 @@ import Metadata from '@/views/CustomersView/components/RightSide/Metadata.vue'
 import Notes from '@/views/CustomersView/components/RightSide/Notes.vue'
 </script>
 <template>
-  <div class="flex gap-12">
-    <main class="flex-1 border-error border">
-      <Customers />
-      <Subscriptions />
-      <Payments />
-      <PaymentMethods />
-      <Entitlements />
-      <Invoices />
-      <PendingInvoiceItems />
-      <Quotes />
-      <InvoiceCreditBalance />
-      <RecentActivity />
-      <SendEmail />
-      <Logs />
-      <Events />
-    </main>
-    <aside class="w-[300px] border-primary border">
-      <Notes />
-      <Insights />
-      <Details />
-      <Metadata />
-    </aside>
+  <div>
+    <Customers />
+    <div class="flex gap-12">
+      <main class="flex-1 border-error border">
+        <Subscriptions />
+        <Payments />
+        <PaymentMethods />
+        <Entitlements />
+        <Invoices />
+        <PendingInvoiceItems />
+        <Quotes />
+        <InvoiceCreditBalance />
+        <RecentActivity />
+        <SendEmail />
+        <Logs />
+        <Events />
+      </main>
+      <aside class="w-[300px] border-primary border">
+        <Notes />
+        <Insights />
+        <Details />
+        <Metadata />
+      </aside>
+    </div>
   </div>
 </template>
 <style lang="less" scoped></style>
