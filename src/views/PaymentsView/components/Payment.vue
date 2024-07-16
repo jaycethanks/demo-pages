@@ -13,14 +13,14 @@ import SucceedChip from '@/components/SucceedChip.vue'
       pi_3PF6xZAqkzzGorqL1DRq1u0T <SignBoardSvgIcon />
     </div>
     <!-- main-info -->
-    <div class="flex justify-between">
+    <div class="flex justify-between mt-2">
       <div class="right flex items-center">
         <span class="text-3xl font-semibold text-[#22252d]">$20.00</span
         ><span class="text-3xl mx-2 text-gray-600">USD</span>
         <SucceedChip />
       </div>
       <div class="left">
-        <v-btn variant="flat"
+        <v-btn class="mr-4"
           ><BackupIcon class="text-2xl" /><span class="normal-case">Refund</span></v-btn
         >
         <v-btn variant="text" icon="mdi-dots-horizontal"></v-btn>

@@ -1,7 +1,7 @@
 <template>
-  <div class="root-container border border-red-500">
+  <div class="root-container">
     <slot name="header" />
-    <div class="flex py-8 px-12 h-auto">
+    <div class="flex py-8 px-8 h-auto gap-6">
       <slot name="default" />
     </div>
   </div>

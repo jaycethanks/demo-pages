@@ -4,16 +4,16 @@ import { ref } from 'vue'
 const model = ref(false)
 </script>
 <template>
-  <header class="px-12 py-6 text-[#3e4150] flex">
+  <header class="px-8 py-6 text-[#3e4150] flex gap-6">
     <!-- header aside part -->
-    <div class="aside gap-4 flex items-center w-[200px]">
+    <div v-ripple class="aside gap-4 flex items-center w-[200px] p-2">
       <StoreSvgIcon class="text-2xl" />
       <span class="font-semibold">FelixTest</span>
     </div>
 
     <!-- header main-content part -->
-    <div class="main-content flex justify-between flex-1 items-center">
-      <div class="left w-[200px]">
+    <div class="px-12 main-content flex justify-between flex-1 items-center">
+      <div class="left sm:w-[100px] md:w-[300px] lg:w-[500px]">
         <v-text-field
           density="compact"
           prepend-inner-icon="mdi-magnify"
@@ -23,16 +23,14 @@ const model = ref(false)
         ></v-text-field>
       </div>
       <div class="right flex items-center gap-8">
-        <v-btn variant="text" class="font-semibold"
-          ><span class="normal-case">Devepolers</span></v-btn
-        >
-        <span class="inline-flex items-center gap-2 font-semibold">
-          Test Mode <v-switch density="compact" v-model="model" hide-details inset></v-switch
+        <v-btn variant="text"><span class="normal-case font-semibold">Devepolers</span></v-btn>
+        <span class="inline-flex items-center gap-2 font-semibold whitespace-nowrap">
+          Test Mode <v-switch density="comfortable" v-model="model" hide-details></v-switch
         ></span>
-        <v-btn icon="mdi-comment-question-outline"></v-btn>
-        <v-btn icon="mdi-bell-outline"></v-btn>
-        <v-btn icon="mdi-cog"></v-btn>
-        <v-btn icon="mdi-plus"></v-btn>
+        <v-btn density="comfortable" variant="text" icon="mdi-comment-question-outline"></v-btn>
+        <v-btn density="comfortable" variant="text" icon="mdi-bell-outline"></v-btn>
+        <v-btn density="comfortable" variant="text" icon="mdi-cog"></v-btn>
+        <v-btn color="#6856ea" density="comfortable" icon="mdi-plus"></v-btn>
       </div>
     </div>
   </header>
