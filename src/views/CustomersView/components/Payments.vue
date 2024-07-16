@@ -10,7 +10,8 @@ const selected = ref([])
 const headers = [
   { title: 'Amount', key: 'amount' },
   { title: 'Description', key: 'description' },
-  { title: 'Date', key: 'date' }
+  { title: 'Date', key: 'date' },
+  { title: '', key: 'actions', sortable: false }
 ]
 const items = [
   {
@@ -79,6 +80,15 @@ const items = [
           <span class="ml-2">{{ value.unit }}</span>
           <SucceedChip v-if="value.succeed" class="ml-2" /><CanceledChip v-else class="ml-2" />
         </td>
+      </template>
+      <template v-slot:item.description="{ value }">
+        <span class="whitespace-nowrap">{{ value }}</span>
+      </template>
+      <template v-slot:item.date="{ value }">
+        <span class="whitespace-nowrap">{{ value }}</span>
+      </template>
+      <template v-slot:item.actions="{ item }">
+        <v-btn density="comfortable" variant="text" size="small" icon="mdi-dots-horizontal"></v-btn>
       </template>
     </v-data-table>
   </SectionCard>
