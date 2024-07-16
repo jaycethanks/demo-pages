@@ -21,7 +21,9 @@ const alert = ref(true)
       <p class="inline-flex items-center gap-4">
         <v-chip density="comfortable" color="orange">55</v-chip>
         <span class="font-semibold">Normal</span>
-        <v-btn><span class="normal-case">Show all insights</span></v-btn>
+        <v-btn density="comfortable"
+          ><span class="normal-case font-semibold">Show all insights</span></v-btn
+        >
       </p>
     </Heading>
 

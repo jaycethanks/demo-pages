@@ -7,7 +7,9 @@ import SectionCard from '@/components/SectionCard.vue'
 <template>
   <SectionCard>
     <Heading title="Timeline">
-      <v-btn prepend-icon="mdi-plus"><span class="normal-case">Add node</span></v-btn>
+      <v-btn density="comfortable" prepend-icon="mdi-plus"
+        ><span class="normal-case font-semibold">Add node</span></v-btn
+      >
     </Heading>
     <ul>
       <li class="flex mb-4">

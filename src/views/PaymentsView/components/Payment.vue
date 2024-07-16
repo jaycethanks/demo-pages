@@ -20,10 +20,12 @@ import SucceedChip from '@/components/SucceedChip.vue'
         <SucceedChip />
       </div>
       <div class="left">
-        <v-btn class="mr-4"
-          ><BackupIcon class="text-2xl" /><span class="normal-case">Refund</span></v-btn
+        <v-btn class="mr-4" density="comfortable"
+          ><BackupIcon class="text-2xl" /><span class="normal-case font-semibold"
+            >Refund</span
+          ></v-btn
         >
-        <v-btn class="!min-w-10 px-1">
+        <v-btn class="!min-w-10 px-1" density="comfortable">
           <v-icon icon="mdi-dots-horizontal"></v-icon>
         </v-btn>
       </div>

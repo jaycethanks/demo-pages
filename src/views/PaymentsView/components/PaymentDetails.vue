@@ -54,9 +54,14 @@ const disableInput = ref(true)
           v-model="input"
           class="mr-2"
         ></v-text-field>
-        <v-btn v-if="disableInput" @click="disableInput = false" variant="text">
+        <v-btn
+          v-if="disableInput"
+          @click="disableInput = false"
+          variant="text"
+          density="comfortable"
+        >
           <span class="text-[#6759da] flex gap-2 items-center">
-            <EditSvgIcon /><span class="normal-case">Edit</span>
+            <EditSvgIcon /><span class="normal-case font-semibold">Edit</span>
           </span>
         </v-btn>
         <v-btn v-else variant="text" @click="disableInput = true">
