@@ -48,10 +48,7 @@ import SucceedChip from '@/components/SucceedChip.vue'
         >
 
         <v-col class="text-[#4e3dac]">
-          <span
-            class="inline-block rounded-full px-1 py-1 font-semibold text-xs text-[#9d5530] bg-[#fdebba]"
-            >55</span
-          >
+          <v-chip density="comfortable" color="orange">55</v-chip>
           Normal</v-col
         >
       </v-row>

@@ -58,19 +58,20 @@ const desserts = [
           :key="id"
         >
           <th>
-            <span
-              class="inline-block rounded-full px-1 py-1 font-semibold text-xs text-[#9d5530] bg-[#fdebba]"
-              >{{ risk }}</span
-            >
+            <v-chip density="comfortable" color="orange">{{ risk }}</v-chip>
           </th>
           <th class="text-[#6057b9]">${{ amount }} <SucceedChip class="ml-2" /></th>
           <th>
-            <span class="inline-flex px-2 py-1 items-center gap-2 bg-[#faead9] rounded-md">
-              <CreditCardSvgIcon class="text-2xl" />•••• {{ sourceType }}</span
-            >
+            <v-chip density="comfortable" label color="orange">
+              <p class="text-gray-700 inline-flex items-center gap-2">
+                <CreditCardSvgIcon class="text-2xl" />•••• {{ sourceType }}
+              </p>
+            </v-chip>
           </th>
           <th>
-            <span class="inline-flex px-2 py-1 bg-[#faead9] rounded-md">{{ customer }}</span>
+            <v-chip density="comfortable" label color="orange">
+              <span class="text-gray-700">{{ customer }}</span>
+            </v-chip>
           </th>
           <th>{{ device }}</th>
           <th>

@@ -19,10 +19,7 @@ const alert = ref(true)
         </p>
       </template>
       <p class="inline-flex items-center gap-4">
-        <span
-          class="inline-block rounded-full px-1 py-1 font-semibold text-xs text-[#9d5530] bg-[#fdebba]"
-          >55</span
-        >
+        <v-chip density="comfortable" color="orange">55</v-chip>
         <span class="font-semibold">Normal</span>
         <v-btn><span class="normal-case">Show all insights</span></v-btn>
       </p>
