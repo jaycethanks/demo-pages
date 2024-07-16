@@ -59,14 +59,21 @@ const disableInput = ref(true)
           @click="disableInput = false"
           variant="text"
           density="comfortable"
+          color="primary"
         >
-          <span class="text-[#6759da] flex gap-2 items-center">
+          <span class="flex gap-2 items-center">
             <EditSvgIcon /><span class="normal-case font-semibold">Edit</span>
           </span>
         </v-btn>
-        <v-btn v-else variant="text" @click="disableInput = true">
-          <span class="text-[#6759da] flex gap-2 items-center">
-            <CheckedSvgIcon /><span class="normal-case">Ok</span>
+        <v-btn
+          density="comfortable"
+          color="primary"
+          v-else
+          variant="text"
+          @click="disableInput = true"
+        >
+          <span class="flex gap-2 items-center">
+            <CheckedSvgIcon /><span class="normal-case font-semibold">Ok</span>
           </span>
         </v-btn>
       </v-col>

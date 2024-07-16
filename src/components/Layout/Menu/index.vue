@@ -45,7 +45,7 @@ const MenuList = [
       v-ripple
       class="flex gap-4 items-center p-2"
       v-for="({ name, path, icon }, index) in MenuList"
-      :class="[currentPath === path ? 'text-[#513cbf] ' : 'text-[#36373e]']"
+      :class="[currentPath === path ? 'text-primary' : 'text-[#36373e]']"
       :key="name"
       :to="path"
     >

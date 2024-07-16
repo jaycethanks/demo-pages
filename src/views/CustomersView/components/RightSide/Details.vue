@@ -31,7 +31,7 @@ import ClockSvgIcon from '@/components/Icons/ClockSvgIcon.vue'
       <p class="detail-title font-semibold">Biling details</p>
       <p class="detail-value text-gray-500">—</p>
 
-      <p class="mt-6 text-[#8982c6]">Show more</p>
+      <p class="mt-6 text-primary hover:!opacity-75 cursor-pointer">Show more</p>
     </div>
   </SectionCard>
 </template>

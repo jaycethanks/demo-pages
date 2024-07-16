@@ -2,6 +2,7 @@
 
 // Vuetify
 import 'vuetify/styles'
+import colors from 'vuetify/util/colors'
 import '@mdi/font/css/materialdesignicons.css' // Ensure you are using css-loader
 import { createVuetify } from 'vuetify'
 import * as components from 'vuetify/components'
@@ -12,6 +13,15 @@ const vuetify = createVuetify({
     icons: {
         defaultSet: 'mdi', // This is already the default value - only for display purposes
     },
+    theme: {
+        themes: {
+            light: {
+                colors: {
+                    primary: "#5b45d0", // #E53935
+                }
+            }
+        }
+    }
 })
 
 import './assets/main.css'

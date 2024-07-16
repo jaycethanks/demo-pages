@@ -4,8 +4,10 @@ import SectionCard from '@/components/SectionCard.vue'
 </script>
 <template>
   <SectionCard>
-    <p class="mb-1 text-[#513cbf] font-semibold hover:text-[#392792] cursor-pointer">
-      Customers <v-icon icon="mdi-chevron-right" size="small"></v-icon>
+    <p class="mb-1">
+      <span class="font-semibold text-primary hover:!opacity-75 cursor-pointer"
+        >Customers <v-icon icon="mdi-chevron-right" size="small"></v-icon
+      ></span>
     </p>
     <Heading title="阿斯顿发斯蒂芬12312323">
       <v-btn density="comfortable" class="mr-2"

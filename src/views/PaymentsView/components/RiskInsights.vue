@@ -43,7 +43,7 @@ const alert = ref(true)
     >
       <template v-slot:close>
         <div class="flex items-center">
-          <v-btn variant="flat" rounded="0" class="w-auto px-2 mr-4 rounded-lg"
+          <v-btn color="primary" variant="tonal" rounded="0" class="w-auto px-2 mr-4 rounded-lg"
             ><span class="normal-case text-base">Learn more</span></v-btn
           >
           <v-btn icon="mdi-close" @click="alert = false"></v-btn>

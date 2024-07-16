@@ -41,7 +41,7 @@ import SucceedChip from '@/components/SucceedChip.vue'
       </v-row>
       <v-row class="text-gray-700" dense>
         <v-col>May 11, 11:50 AM</v-col>
-        <v-col class="text-[#4e3dac] font-semibold">Felix Sun</v-col>
+        <v-col class="text-primary hover:!opacity-75 font-semibold">Felix Sun</v-col>
         <v-col class="flex items-center"
           ><VisaSvgIcon class="text-[#0057a3] inline-block text-2xl" /><span class="mx-2 text-xs"
             >••••</span
@@ -49,7 +49,7 @@ import SucceedChip from '@/components/SucceedChip.vue'
           4242</v-col
         >
 
-        <v-col class="text-[#4e3dac]">
+        <v-col class="text-primary hover:!opacity-75">
           <v-chip density="comfortable" color="orange">55</v-chip>
           Normal</v-col
         >

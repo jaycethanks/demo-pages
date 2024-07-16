@@ -25,13 +25,13 @@ onUnmounted(() => {
 </script>
 <template>
   <div ref="mapContainer" class="map-container relative w-full h-[200px]">
-    <v-btn variant="text" class="!absolute right-1 top-1 z-10"
-      ><span class="normal-case font-semibold text-[#6171b4]">Reset</span></v-btn
+    <v-btn color="primary" density="comfortable" variant="text" class="!absolute right-1 top-1 z-10"
+      ><span class="normal-case font-semibold">Reset</span></v-btn
     >
   </div>
   <p class="mt-2">
     No session data available.
-    <a href="javascript:void(0)" class="text-[#6171b4] hover:text-[#364170]">Learn more</a>
+    <a href="javascript:void(0)" class="text-primary hover:!opacity-75 font-semibold">Learn more</a>
   </p>
   <p class="flex justify-between mt-2">
     <span>IP address</span>

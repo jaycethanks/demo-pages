@@ -27,7 +27,7 @@ const logs = [
       >
     </v-row>
 
-    <v-btn class="mt-8" variant="text" color="#4f3ac8"
+    <v-btn class="mt-8" variant="text" color="primary"
       ><span class="font-semibold normal-case">View more logs</span></v-btn
     >
   </SectionCard>

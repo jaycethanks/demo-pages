@@ -26,7 +26,7 @@ import { ref } from 'vue'
     </v-row>
     <v-row dense>
       <v-col md="3" lg="2" cols="6" class="text-gray-500">Fingerprint</v-col>
-      <v-col md="3" lg="2" cols="6" class="inline-flex items-center text-[#7065cc]"
+      <v-col md="3" lg="2" cols="6" class="inline-flex items-center text-primary hover:!opacity-75"
         >QlfGjXhL311xfKVV</v-col
       >
       <v-col md="3" lg="2" cols="6" offset-lg="2" offset-sm="0" class="text-gray-500">Origin</v-col>

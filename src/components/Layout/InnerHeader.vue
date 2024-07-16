@@ -6,10 +6,12 @@ const model = ref(false)
 <template>
   <header class="px-8 py-6 text-[#3e4150] flex gap-6">
     <!-- header aside part -->
-    <div v-ripple class="aside gap-4 flex items-center w-[200px] p-2">
-      <StoreSvgIcon class="text-2xl" />
-      <span class="font-semibold">FelixTest</span>
-    </div>
+    <RouterLink color="primary" key="homepage" to="/">
+      <div v-ripple class="aside gap-4 flex items-center w-[200px] p-2 active:text-primary">
+        <StoreSvgIcon class="text-2xl" />
+        <span class="font-semibold">FelixTest</span>
+      </div>
+    </RouterLink>
 
     <!-- header main-content part -->
     <div class="px-12 main-content flex justify-between flex-1 items-center">
@@ -30,7 +32,7 @@ const model = ref(false)
         <v-btn density="comfortable" variant="text" icon="mdi-comment-question-outline"></v-btn>
         <v-btn density="comfortable" variant="text" icon="mdi-bell-outline"></v-btn>
         <v-btn density="comfortable" variant="text" icon="mdi-cog"></v-btn>
-        <v-btn color="#6856ea" density="comfortable" icon="mdi-plus"></v-btn>
+        <v-btn color="primary" density="comfortable" icon="mdi-plus"></v-btn>
       </div>
     </div>
   </header>
