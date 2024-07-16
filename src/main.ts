@@ -1,4 +1,3 @@
-import './assets/main.css'
 
 
 // Vuetify
@@ -14,6 +13,8 @@ const vuetify = createVuetify({
         defaultSet: 'mdi', // This is already the default value - only for display purposes
     },
 })
+
+import './assets/main.css'
 
 
 import { createApp } from 'vue'
