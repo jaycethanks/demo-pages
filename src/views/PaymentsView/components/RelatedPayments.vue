@@ -60,7 +60,10 @@ const desserts = [
           <th>
             <v-chip density="comfortable" color="orange">{{ risk }}</v-chip>
           </th>
-          <th class="text-primary">${{ amount }} <SucceedChip class="ml-2" /></th>
+          <th class="text-primary">
+            <span class="inline-block min-w-[4em]">${{ amount }}</span>
+            <SucceedChip class="ml-2" />
+          </th>
           <th>
             <v-chip density="comfortable" label color="orange">
               <p class="text-gray-700 inline-flex items-center gap-2">

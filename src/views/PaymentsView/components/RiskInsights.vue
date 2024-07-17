@@ -57,7 +57,13 @@ const alert = ref(true)
         <h3 class="font-semibold mb-4">CUSTOMER</h3>
         <v-row dense>
           <v-col lg="3" cols="6" class="text-gray-500">Customer email</v-col>
-          <v-col align-self="start" lg="3" cols="6" class="">sunfmin@gmail.com</v-col>
+          <v-col
+            align-self="start"
+            lg="3"
+            cols="6"
+            class="text-primary cursor-pointer hover:!opacity-70"
+            >sunfmin@gmail.com</v-col
+          >
         </v-row>
         <v-row dense>
           <v-col lg="3" cols="6" class="text-gray-500">Name</v-col>

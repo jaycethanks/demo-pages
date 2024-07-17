@@ -1,6 +1,7 @@
 <script lang="ts" setup>
 import Heading from '@/components/Heading.vue'
 import SectionCard from '@/components/SectionCard.vue'
+import TransSvgIcon from '@/components/Icons/TransSvgIcon.vue'
 import { computed, ref } from 'vue'
 const items = [
   {
@@ -47,8 +48,10 @@ const handleSelected = (toggle: Function, id: number) => {
 <template>
   <SectionCard>
     <Heading title="Events and logs" />
-    <p class="text-lg">LATEST ACTIVITY</p>
-    <p class="mt-2"><span class="text-gray-500">PaymentIntent status: </span> succeeded</p>
+    <p class="">LATEST ACTIVITY</p>
+    <p class="mt-2">
+      <span class="text-gray-500 text-sm font-mono">PaymentIntent status: </span> succeeded
+    </p>
     <v-row class="mt-12">
       <!-- left timeline part -->
       <v-col cols="6">
@@ -82,9 +85,13 @@ const handleSelected = (toggle: Function, id: number) => {
       </v-col>
       <v-col cols="6" v-if="currentData">
         <!-- right info detail part -->
-        <p>From Stripe</p>
-        <p class="font-semibold mt-2">{{ currentData?.data.from }}</p>
-        <p class="mt-2 text-[#726db2]">View event detail</p>
+        <p class="flex items-center gap-2 text-gray-500"><TransSvgIcon />From Stripe</p>
+        <p class="font-semibold mt-2 text-lg">{{ currentData?.data.from }}</p>
+        <p class="mt-2">
+          <span class="text-primary hover:!opacity-70 font-semibold cursor-pointer">
+            View event detail
+          </span>
+        </p>
         <p class="mt-6 mb-4">Event data</p>
         <pre
           >{{ JSON.stringify(currentData?.data, undefined, 2) }}
